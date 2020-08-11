@@ -1,0 +1,18 @@
+{
+  "name": "testcafe-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "BASE_URL='http://automationpractice.com' gherkin-testcafe chrome steps/*.ts features/*.feature -s takeOnFails=true",
+    "test:wip": "BASE_URL='http://automationpractice.com' gherkin-testcafe chrome steps/*.ts features/*.feature --tags @wip -s takeOnFails=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^6.0.5",
+    "gherkin-testcafe": "^2.5.1",
+    "testcafe": "^1.9.0"
+  }
+}
