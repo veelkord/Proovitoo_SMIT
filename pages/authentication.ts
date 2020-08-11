@@ -14,6 +14,11 @@ class AuthenticationPage {
   zipCodeInput: Selector;
   createAccountError: Selector;
 
+  loginEmailInput: Selector;
+  loginPasswordInput: Selector;
+  loginSubmitBtn: Selector;
+  loginError: Selector;
+
   constructor() {
     this.registerEmailInput = Selector("#email_create");
     this.registerNewBtn = Selector("#SubmitCreate");
@@ -29,6 +34,11 @@ class AuthenticationPage {
     this.registerSubmitBtn = Selector("#submitAccount");
 
     this.createAccountError = Selector("#create_account_error");
+
+    this.loginEmailInput = Selector("#email");
+    this.loginPasswordInput = Selector("#passwd");
+    this.loginSubmitBtn = Selector("#SubmitLogin");
+    this.loginError = Selector("#center_column div.alert");
   }
 
   selectOption = async (selectElement: Selector, option: string) => {

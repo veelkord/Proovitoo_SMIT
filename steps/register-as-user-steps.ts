@@ -27,21 +27,29 @@ When("I enter valid values for user registration and submit", async () => {
   );
 });
 
-Then("I should be successfully registered and logged in", async () => {
+Then("I should be logged in", async () => {
   await t.expect(NavBarPage.signOutLink.visible).eql(true);
   await t.expect(NavBarPage.accoutLink.textContent).eql(t.ctx.name);
 });
 
-Then("I am registered as user", async () => {
+Given("I am a registered user", async () => {
   await HomePage.browse();
   await t.click(NavBarPage.signInLink);
+
   const emailId = randomEmailId(6);
   t.ctx.emailId = emailId;
+  const password = randomString(6);
+  t.ctx.password = password;
+
+  const firstName = randomString(6);
+  const lastName = randomString(6);
+  t.ctx.name = `${firstName} ${lastName}`;
+
   await AuthenticationPage.registerUser(
     emailId,
-    randomString(6),
-    randomString(6),
-    randomString(6),
+    firstName,
+    lastName,
+    password,
     "1 abc road",
     "New York",
     "New York",

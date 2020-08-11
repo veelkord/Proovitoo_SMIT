@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "BASE_URL='http://automationpractice.com' gherkin-testcafe chrome steps/*.ts features/*.feature -s takeOnFails=true",
-    "test:wip": "BASE_URL='http://automationpractice.com' gherkin-testcafe chrome steps/*.ts features/*.feature --tags @wip -s takeOnFails=true"
+    "test": "BASE_URL='http://automationpractice.com' gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
+    "test:wip": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags @wip -s takeOnFails=true",
+    "test:firefox": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags ~@wip -s takeOnFails=true"
   },
   "keywords": [],
   "author": "",
