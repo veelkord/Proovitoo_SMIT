@@ -4,6 +4,7 @@ Sample automation tests for automationpractice web app using testcafe and cucumb
 
 ### How to run
 
+1. Install typescript globally `npm i -g typescript`
 1. Clone the repo
 2. Install dependencies: `npm i`
 3. Run tests: `npm run test`
