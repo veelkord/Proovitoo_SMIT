@@ -6,7 +6,7 @@ import AuthenticationPage from "../pages/authentication";
 import { randomEmailId, randomString } from "./helpers";
 
 Given("I am on registration page", async () => {
-  await HomePage.browse();
+  await t.navigateTo('imdb.com');
   await t.click(NavBarPage.signInLink);
 });
 
@@ -33,7 +33,7 @@ Then("I should be logged in", async () => {
 });
 
 Given("I am a registered user", async () => {
-  await HomePage.browse();
+  await t.navigateTo("http://imdb.com").wait(3000);
   await t.click(NavBarPage.signInLink);
 
   const emailId = randomEmailId(6);

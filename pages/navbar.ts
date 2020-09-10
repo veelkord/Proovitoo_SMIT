@@ -6,7 +6,7 @@ class NavBarPage {
   signOutLink: Selector;
   accoutLink: Selector;
   constructor() {
-    this.signInLink = Selector("#header a.login");
+    this.signInLink = Selector("#imdbHeader-navDrawerOpen");
     this.contactUsLink = Selector("#contact-link a");
     this.signOutLink = Selector("#header a.logout");
     this.accoutLink = Selector("#header a.account");

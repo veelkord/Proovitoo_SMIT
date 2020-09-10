@@ -1,6 +1,7 @@
 import { t, Selector } from "testcafe";
 import { config } from "../config";
 
+
 class HomePage {
   popularProducts: Selector;
   brandLogo: Selector;
@@ -31,7 +32,7 @@ class HomePage {
   }
 
   browse = async () => {
-    await t.navigateTo(`${process.env.BASE_URL || config.baseUrl}/index.php`);
+    await t.navigateTo(`imdb.com || config.baseUrl}/index.php`);
   };
 
   checkoutPopularItem = async () => {
