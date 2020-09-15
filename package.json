@@ -1,14 +1,16 @@
 {
-  "name": "testcafe-cucumber",
+  "name": "testcafe-cucumber-imdb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
+    "prio1": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @priority1 takeOnFails=true",
+    "prio2": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @priority2 takeOnFails=true",
+    "test-all": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @wip takeOnFails=true",
     "test:ie": "gherkin-testcafe ie steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
     "test-headless": "gherkin-testcafe chrome:headless steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
     "test:wip": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags @wip -s takeOnFails=true",
-    "test:chrome:mobile": "gherkin-testcafe chrome:emulation:device=iphone X --hostname 127.0.0.1 steps/*.ts features/*.feature -s --skip-js-errors",
+    "test:chrome:mobile": "gherkin-testcafe chrome:emulation:device=iphone X --hostname 127.0.0.1 steps/*.ts features/*.feature --tags @mobile -s --skip-js-errors",
     "tests-chrome-with-report": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true --reporter cucumber-json:reports/report.json --reporter-app-name='testcafe-e2e-automation-framework' --reporter-app-version='1.0'",
     "test:firefox": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags ~@wip -s takeOnFails=true"
   },
@@ -20,5 +22,8 @@
     "gherkin-testcafe": "^2.5.1",
     "testcafe": "^1.9.0",
     "testcafe-reporter-cucumber-json": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.1"
   }
 }
