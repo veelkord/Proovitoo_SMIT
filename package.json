@@ -10,9 +10,8 @@
     "test:ie": "gherkin-testcafe ie steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
     "test-headless": "gherkin-testcafe chrome:headless steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
     "test:wip": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags @wip -s takeOnFails=true",
-    "test:chrome:mobile": "gherkin-testcafe chrome:emulation:device=iphone X --hostname 127.0.0.1 steps/*.ts features/*.feature --tags @mobile -s --skip-js-errors",
-    "tests-chrome-with-report": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true --reporter cucumber-json:reports/report.json --reporter-app-name='testcafe-e2e-automation-framework' --reporter-app-version='1.0'",
-    "test:firefox": "BASE_URL='http://automationpractice.com' gherkin-testcafe firefox steps/*.ts features/*.feature --tags ~@wip -s takeOnFails=true"
+    "test:chrome:mobile": "gherkin-testcafe chrome:emulation:device=iphone X --hostname 127.0.0.1 steps/*.ts features/*.feature --tags @mobile -s takeOnFails=true",
+    "tests-chrome-with-report": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true --reporter cucumber-json:reports/report.json --reporter-app-name='testcafe-e2e-automation-framework' --reporter-app-version='1.0'"
   },
   "keywords": [],
   "author": "",

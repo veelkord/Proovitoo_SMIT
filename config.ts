@@ -1,3 +1,6 @@
-export const config = {
-  baseUrl: "http://automationpractice.com",
+
+const config = {
+  baseUrl: 'http://imdb.com'
 };
+
+export { config };
