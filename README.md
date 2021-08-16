@@ -1,6 +1,9 @@
 # testcafe-cucumber suitsutestid IMDB.com jaoks
 
-Testcafe ja Cucumberjs raamistikuga loodud kasutajaliidese testid
+Testcafe ja Cucumberjs raamistikuga loodud kasutajaliidese testid harjutamiseks.
+Otsi siitsamalt lehelt veel näiteid ja proovi neid käima panna kasutades otsingusõna "testcafe examples"
+Otsi Testcafe dokumentatsiooni ja uuri kuidas see toimib
+Kui hätta jääd, kindlasti küsi 
 
 ### Kuidas jooksutada - käsurealt käivita järgmised käsud
 
