@@ -1,17 +1,17 @@
-# testcafe-cucumber smoke tests of IMDB Top Rated Movies
+# testcafe-cucumber suitsutestid IMDB.com jaoks
 
-Set of tests to smoke test using testcafe and cucumberjs.
+Testcafe ja Cucumberjs raamistikuga loodud kasutajaliidese testid
 
-### How to run
+### Kuidas jooksutada - käsurealt käivita järgmised käsud
 
-1. Install typescript globally `npm i -g typescript`
-1. Clone the repo
-2. Install dependencies: `npm i`
-3. Run tests in Chrome: `npm run prio1` or `npm run prio2` for priority 2 use cases
-4. Run tests in IE: `npm run test:ie`
-5. Run tests via X phone emulator `npm run test:chrome:mobile`
+1. Typescripti laadimiseks  `npm i -g typescript`
+1. Klooni repo
+2. Lae alla sõltuvused `npm i`
+3. Käivita Chromes testimiseks: `npm run prio1` või `npm run prio2` 
+4. Käivita IE's testimiseks: `npm run test:ie`
 
-### Note
+### Ülesanded
 
-- It's likely that users of IMDB use IE, Testcafe was chosen because it supports IE
-- Testcafe and Gherkin was used, all testcases are easily readable from the .feature file
+Nüüd kui sa oled näinud kuidas testid jooksevad, kohanda teste www.smit.ee karjäärilehe jaoks https://www.smit.ee/et/karjaar
+Mis on kõige tähtsamad funktsioonid sellel lehel? Loo nendest lähtudes manuaalsed testlood 
+Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas
