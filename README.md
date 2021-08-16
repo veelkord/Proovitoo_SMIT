@@ -15,6 +15,7 @@ Kui hätta jääd, kindlasti küsi
 
 ### Ülesanded
 
-Nüüd kui sa oled näinud kuidas testid jooksevad, kohanda teste www.smit.ee karjäärilehe jaoks https://www.smit.ee/et/karjaar
-Mis on kõige tähtsamad funktsioonid sellel lehel? Loo nendest lähtudes manuaalsed testlood 
-Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas
+Nüüd kui sa oled näinud kuidas testid jooksevad, kohanda teste www.smit.ee karjäärilehe jaoks https://www.smit.ee/et/karjaar \
+Mis on kõige tähtsamad funktsioonid sellel lehel? Loo nendest lähtudes manuaalsed testlood \
+Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas ja testlood ise saad kirjutada features/ kaustas olevasse faili \
+Eriti tubli oled kui oskad öelda mille jaoks on package.json ja readme.md failid
