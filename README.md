@@ -22,6 +22,9 @@ Mis on kõige tähtsamad funktsioonid sellel lehel? Millised on riskid? Loo nend
 Prioritiseeri testlood (kõrge, keskmine, madal)
 
 Automaattestid:
-Nüüd kui sa oled näinud kuidas testid jooksevad, kohanda neid IMDB teste meie karjäärilehe jaoks https://www.smit.ee/et/karjaar \
+Nüüd kui sa oled näinud kuidas testid jooksevad, koosta testlood meie karjäärilehe jaoks https://www.smit.ee/et/karjaar \
 Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas ja testlood ise saad kirjutada features/ kaustas olevasse faili \
 Eriti tubli oled kui oskad öelda mille jaoks on package.json ja readme.md failid \
+\
+\
+Veelkord, küsi julgelt nõu ja abi
