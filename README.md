@@ -17,11 +17,7 @@ Kui hätta jääd, kindlasti küsi
 
 ### Ülesanded
 
-Manuaaltestid:
-Mis on kõige tähtsamad funktsioonid sellel lehel? Millised on riskid? Loo nendest lähtudes manuaalsed testlood \
-Prioritiseeri testlood (kõrge, keskmine, madal)
 
-Automaattestid:
 Nüüd kui sa oled näinud kuidas testid jooksevad, koosta testlood meie karjäärilehe jaoks https://www.smit.ee/et/karjaar \
 Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas ja testlood ise saad kirjutada features/ kaustas olevasse faili \
 Eriti tubli oled kui oskad öelda mille jaoks on package.json ja readme.md failid \
