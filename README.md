@@ -8,7 +8,7 @@ Otsi Testcafe dokumentatsiooni ja uuri kuidas Testcafe toimib\
 Kui hätta jääd, kindlasti küsi 
 
 ### Kuidas jooksutada - käsurealt käivita järgmised käsud
-
+Sul peab arvutis olema node https://nodejs.org/en/download/ ja Git https://git-scm.com/downloads
 1. Typescripti laadimiseks  `npm i -g typescript`
 1. Klooni repo
 2. Lae alla sõltuvused `npm i`
