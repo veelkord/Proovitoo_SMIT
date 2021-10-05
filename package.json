@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prio1": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @priority1 takeOnFails=true",
-    "prio2": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @priority2 takeOnFails=true",
+    "smit1": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @priority1 takeOnFails=true",
     "test-all": "gherkin-testcafe chrome steps/*.ts features/*.feature -s --tags @wip takeOnFails=true",
     "test:ie": "gherkin-testcafe ie steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
     "test-headless": "gherkin-testcafe chrome:headless steps/*.ts features/*.feature -s --tags ~@wip takeOnFails=true",
@@ -23,6 +22,7 @@
     "testcafe-reporter-cucumber-json": "^6.2.0"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
     "@types/jquery": "^3.5.1"
   }
 }

@@ -1,39 +1,36 @@
 import { Given, When, Then } from "cucumber";
 import { t, Selector, ClientFunction, RequestLogger } from "testcafe";
-import ChartPage from "../pages/chartPageElements";
+import CareerPage from "../pages/careerPageElements";
 
-Given("I choose the dropdown from header", async () => {
-  await t.navigateTo('https://www.imdb.com');
-  await t.click(ChartPage.HeaderdropDown).wait(2000);
+// First scenario
+
+Given("I am on the career page", async () => {
+  await t.navigateTo("https://www.smit.ee/et/karjaar");
 });
 
-Then("I should be redirected to the chart", async () => {
-  
-  await t.click(ChartPage.HeaderdropDownTopRatedItem);
-  
-  const getLocation = ClientFunction(() => document.location.href);
-  
- //doesn't work on headless mode  
-  //await t.expect(getLocation()).contains('chart');
-  await t.expect(ChartPage.header.innerText).contains('Top Rated Movies');
+When("I scroll down to the job opportunities", async () => {
+  await t.hover(CareerPage.sectionJobOpportunities).wait(2000);
 });
 
-Given("I am on the chart page", async () => {
-  await t.navigateTo('https://www.imdb.com/chart/top/?ref_=nv_mv_250');
+Then("I should see some available jobs", async () => {
+  await t.expect(CareerPage.anyAvailableJobs.count).gte(1);
 });
 
-Then("there should be 250 movies on the list", async () => {
-  await t.expect(ChartPage.cellSelectorCount.count).eql(250); 
+// Second scenario
+
+Given("I am on the job opportunities view", async () => {
+  await t.navigateTo("https://www.smit.ee/et/karjaar");
+  await t.hover(CareerPage.sectionJobOpportunities).wait(2000);
 });
 
-When("I sort by given ratings to ascending", async () => {
-  await t.click(ChartPage.sortByDropdown);
-  await t.click(ChartPage.sortByBingRatings);
+Then("There should be a apply button", async () => {
+  await t.expect(CareerPage.applyButtonText).ok();
 });
 
-Then("movies should be filtered ascending", async () => {
-    const firstCell = Selector('td[name="ratingColumn.imdbRating"]').nth(0);
-    const secondCell = Selector('td[name="ratingColumn.imdbRating"]').nth(1);
+When("I click on it", async () => {
+  await t.click(CareerPage.applyButton).wait(1500);
+});
 
-    await t.expect(firstCell <= secondCell).ok();
+Then("Application form will open", async () => {
+  await t.expect(CareerPage.popUpTab).ok();
 });

@@ -1,26 +1,16 @@
-# testcafe-cucumber suitsutestid IMDB.com jaoks
+# testcafe-cucumber suitsutestid smit.ee/et/karjaar jaoks
 
-Testcafe ja Cucumberjs raamistikuga loodud kasutajaliidese testid harjutamiseks.\
-\
-\
-Otsi siitsamalt github lehelt veel näiteid kasutades otsingusõna "testcafe examples" ja proovi neid käima panna \
-Otsi Testcafe dokumentatsiooni ja uuri kuidas Testcafe toimib\
-Kui hätta jääd, kindlasti küsi 
+Tegin kaks testi stsenaariumit. Chrome käivitamise käsu muutsin ära, see on nüüd `npm run smit1`.
+
+package.json fail hoiab endas konkreetse node projekti infot nime, kirjeldust, lisatud sõltuvusi ja nende versioone jms.
+Readme.md fail on konkreetse repositooriumi info, juhendite jms jaoks.
 
 ### Kuidas jooksutada - käsurealt käivita järgmised käsud
+
 Sul peab arvutis olema node https://nodejs.org/en/download/ ja Git https://git-scm.com/downloads
-1. Typescripti laadimiseks  `npm i -g typescript`
+
+1. Typescripti laadimiseks `npm i -g typescript`
 1. Klooni repo
-2. Lae alla sõltuvused `npm i`
-3. Käivita Chromes testimiseks: `npm run prio1` või `npm run prio2` 
-4. Käivita IE's testimiseks: `npm run test:ie`
-
-### Ülesanded
-
-
-Nüüd kui sa oled näinud kuidas testid jooksevad, koosta testlood meie karjäärilehe jaoks https://www.smit.ee/et/karjaar \
-Seejärel automatiseeri testlood muutes olemasolevates testides väärtusi: testsammud on /steps kaustas ja leheobjektid ehk HTML elemendid on /pages kaustas ja testlood ise saad kirjutada features/ kaustas olevasse faili \
-Eriti tubli oled kui oskad öelda mille jaoks on package.json ja readme.md failid \
-\
-\
-Veelkord, küsi julgelt nõu ja abi
+1. Lae alla sõltuvused `npm i`
+1. Käivita Chromes testimiseks: `npm run smit1`
+1. Käivita IE's testimiseks: `npm run test:ie`
